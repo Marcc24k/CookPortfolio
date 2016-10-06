@@ -1,0 +1,349 @@
+/*FREAKIN ME OUT STYLE*/
+
+
+/*GLOBAL STLYE*/
+
+h1 {
+    position: fixed;
+    padding: 10px;
+    font-size: 5em;
+    color: darkred;
+    font-family: Passion one, sans-serif;
+    left: 80px;
+    text-align: center;
+    z-index: 11;
+    opacity: .5
+}
+
+h3 {
+    font-size: 1.4em;
+    font-family: Amaranth, sans-serif;
+}
+
+ol {
+    position: relative;
+    font-size: 1.2em;
+    font-family: Amaranth, monospace;
+    width: 50%;
+    left: 22.8%;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* GLOBAL END*/
+
+
+/*BODY STYLE */
+
+body {
+    background-color: slategrey;
+
+}
+
+
+/*BLINDER STYLE -THIS PREVENTS TEXT FROM BEING SEEN FROM BEHIND IMAGE WHEN SCROLLING*/
+
+.blinder {
+    position: fixed;
+    border-radius: 5px;
+    width: 99%;
+    height: 620px;
+    z-index: 9;
+    background-color: midnightblue;
+    /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(yellow, midnightblue);
+    /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(yellow, midnightblue);
+    /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(yellow, midnightblue);
+    /* For Firefox 3.6 to 15 */
+    background: linear-gradient( yellow, midnightblue);
+    /* Standard syntax */
+}
+
+
+/*HEADER STYLE*/
+
+header {
+    position: relative;
+    width: 100%;
+    height: 256px;
+    color: whitesmoke;
+}
+
+
+/*NAVIGATION STYLE*/
+
+.nav-container {
+    position: fixed;
+    color: white;
+    left: 450px;
+    top: 100px;
+    font-size: 1.8em;
+    width: 270px;
+    height: auto;
+    display: flex;
+    letter-spacing: 1.0px;
+    z-index: 11;
+    text-decoration: none;
+    /*TEXT-DECORATION : NONE;  NOT WORKING. BUT LINE-THOUGH DOES! WHY?*/
+}
+
+
+/*ITEMS CLASS STYLE*/
+
+.item-1 {
+    position: relative;
+    text-align: center;
+    border: 2px solid transparent;
+    border-bottom-color: lightcoral;
+    width: 94px;
+    height: 30px;
+    margin: 5px;
+    left: 57px;
+    padding: 5px;
+}
+
+.item-3 {
+    position: relative;
+    text-align: center;
+    border: 2px solid transparent;
+    border-bottom-color: purple;
+    width: 94px;
+    height: 30px;
+    margin: 5px;
+    left: 697px;
+    padding: 5px;
+}
+
+
+/*MY IMAGE STYLE*/
+
+#image-container {
+    position: absolute;
+    width: 100%;
+    height: auto;
+
+}
+
+img {
+    position:fixed;
+    width: 99%;
+    height: 100%;;
+    background-size: contain;
+}
+
+
+/*NAV LINK STYLE*/
+
+a {
+    color: darkslategrey;
+    opacity: .8
+}
+
+
+/*CONTAINER ROW SECTION*/
+
+.row {
+    position: relative;
+    font-family: Amaranth, sans-serif;
+    font-size: 1.1em;
+    top: 370px;
+    padding: 15px;
+    margin: 15px;
+    text-align: center;
+    display: -webkit-flex;
+    /* Safari */
+    display: flex;
+}
+
+
+/* Safari 6.1+ */
+
+.row:nth-of-type(1) {
+    -webkit-flex-grow: 1;
+}
+
+.row:nth-of-type(2) {
+    -webkit-flex-grow: 2;
+}
+
+.row:nth-of-type(3) {
+    -webkit-flex-grow: 1;
+}
+
+
+/* Standard syntax */
+
+.row:nth-of-type(1) {
+    flex-grow: 1;
+}
+
+.row:nth-of-type(2) {
+    flex-grow: 2;
+}
+
+.row:nth-of-type(3) {
+    flex-grow: 1;
+}
+
+.row h3 {
+    color: darkred;
+}
+
+
+/*WHAT'S MY FUNCTION*/
+
+#myFun {
+    position: relative;
+    width: 580px;
+    height: 65px;
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 5px;
+    color: transparent;
+    background-color: burlywood;
+    opacity: .7;
+    -webkit-transition: height 1s, color .29s ease-in, background-color 8s, opacity 8s, border-radius 1s;
+    transition: height 1s, color .29s ease-in, background-color 8s, opacity 8s, border-radius 1s;
+}
+
+#myFun:hover {
+    border-radius: 15px;
+    color: black;
+    background-color: lightgreen;
+    height: 200px;
+    opacity: .6;
+    border-radius: 15px;
+}
+
+
+/*WHAT MAKES ME TICK*/
+
+#myTick {
+    position: relative;
+    width: 580px;
+    height: 65px;
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 5px;
+    color: transparent;
+    background-color: burlywood;
+    opacity: .7;
+    -webkit-transition: height 1s, color .29s ease-in, background-color 8s, opacity 8s, border-radius 3s, border-radius 1s;
+    transition: height 1s, color .29s ease-in, background-color 8s, opacity 8s, border-radius 3s, border-radius 1s;
+}
+
+#myTick:hover {
+    color: whitesmoke;
+    background-color: darkblue;
+    height: 200px;
+    opacity: .6;
+    border-radius: 15px;
+}
+
+
+/*WHAT MY HEADING*/
+
+#myHeading {
+    position: relative;
+    width: 580px;
+    height: 65px;
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 5px;
+    color: transparent;
+    background-color: burlywood;
+    opacity: .7;
+    -webkit-transition: height 1s, color .29s ease-in, background-color 8s, border-radius 1s;
+    transition: height 1s, color .19s ease-in, background-color 8s, border-radius 1s;
+}
+
+#myHeading:hover {
+    color: black;
+    background-color: firebrick;
+    height: 200px;
+    opacity: .6;
+    border-radius: 15px;
+}
+
+
+/*BIG FOOTER STYLE*/
+
+.big-footer {
+    position: relative;
+    top: 370px;
+    text-align: center;
+    width: 98.8%;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: darkslategrey;
+    color: whitesmoke;
+    opacity: .8;
+}
+
+
+/*BLOCKQUOTE STYLE*/
+
+blockquote {
+    position: relative;
+    font-size: 1.3em;
+    font-family: Amaranth, sans-serif;
+    width: 50%;
+    text-align: center;
+    left: 25%;
+}
+
+
+/*BIGG FOOTER H3 STYLE*/
+
+.big-footer h3 {
+    position: relative;
+    color: darkred;
+    border: 2px solid transparent;
+    border-bottom-color: orangered;
+    width: 230px;
+    padding: 5px;
+    left: 42.6%;
+}
+
+ol {
+    position: relative;
+    display: flex;
+    width: 250px;
+    height: 30px;
+    text-align: center;
+    left: 41.9%;
+}
+
+h4 {
+    position: relative;
+    top: -30px;
+    padding: 5px;
+}
+
+
+/*COPYRIGHT STYLE*/
+
+i {
+    position: relative;
+    left: 43.5%;
+    top: 386px;
+    padding: 10px;
+    color: navajowhite;
+}
+
+ 
+
+hr {
+    position: fixed;
+    top: 160px;
+    left: 470px;
+    width: 50%;
+}

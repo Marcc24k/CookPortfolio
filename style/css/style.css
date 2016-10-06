@@ -1,0 +1,451 @@
+/*GLOBAL STLYE*/
+
+h1 {
+    position: fixed;
+    padding: 10px;
+    font-size: 5em;
+    color: darkred;
+    font-family: Passion one, sans-serif;
+    left: 80px;
+    text-align: center;
+    z-index: 11;
+    opacity: .5
+}
+
+h3 {
+    font-size: 1.4em;
+    font-family: Amaranth, sans-serif;
+}
+
+ol {
+    position: relative;
+    font-size: 1.2em;
+    font-family: Amaranth, monospace;
+    width: 50%;
+    left: 22.8%;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+/* GLOBAL END*/
+
+
+/*BODY STYLE */
+
+body {
+    background-color: seagreen;
+}
+
+
+/*HEADER IMAGE STYLE*/
+
+.yakBack {
+    position: fixed;
+    border-radius: 5px;
+    opacity: .8;
+    width: 99%;
+    height: 570px;
+    z-index: 10;
+    box-shadow: 0px 0px 5px 5px grey;
+}
+
+
+/*BLINDER STYLE -THIS PREVENTS TEXT FROM BEING SEEN FROM BEHIND IMAGE WHEN SCROLLING*/
+
+.blinder {
+    position: fixed;
+    border-radius: 5px;
+    width: 99%;
+    height: 570px;
+    z-index: 9;
+   background: linear-gradient(182deg, #ecf206, #060bf2);
+background-size: 1200% 1200%;
+
+-webkit-animation: blinderAnimation 30s ease infinite;
+-moz-animation: blinderAnimation 30s ease infinite;
+animation: blinderAnimation 30s ease infinite;
+
+}
+
+
+@-webkit-keyframes blinderAnimation {
+    0%{background-position:48% 0%}
+    50%{background-position:53% 100%}
+    100%{background-position:48% 0%}
+}
+@-moz-keyframes blinderAnimation {
+    0%{background-position:48% 0%}
+    50%{background-position:53% 100%}
+    100%{background-position:48% 0%}
+}
+@keyframes blinderAnimation { 
+    0%{background-position:48% 0%}
+    50%{background-position:53% 100%}
+    100%{background-position:48% 0%}
+}
+
+/*HEADER STYLE*/
+
+header {
+    position: relative;
+    width: 100%;
+    height: 260px;
+    color: whitesmoke;
+}
+
+
+/*INTRO DEVELOPER MESSAGE STYLE*/
+
+.intro {
+    position: fixed;
+    opacity: .7;
+    color: orangered;
+    font-size: 2.9em;
+    height: 150px;
+    padding: 10px;
+    text-align: center;
+    left: 21%;
+    top: 128px;
+    z-index: 11;
+    font-family: Amaranth, sans-serif;
+}
+
+.intro p {
+    position: relative;
+    color: aliceblue;
+    font-size: .6em;
+    width: 77%;
+    text-align: center;
+    left: 120px;
+    top: 10px;
+    z-index: 51;
+}
+
+
+/*WORK BUTTON STYLE*/
+
+.button {
+    position: fixed;
+    top: 500px;
+    left: 890px;
+    width: 80px;
+    height: 20px;
+    padding: 2px;
+    text-align: center;
+    text-decoration: none;
+    font-family: amaranth ,sans-serif;
+    border: 2px solid #f2f2f2;
+    border-radius: 5px;
+    background-color: orangered;
+    z-index: 51;
+    opacity: .7;
+}
+
+.button:hover {
+    border: 2px ridge ;
+    background-color: #52bab3;
+    border-radius: 6px;
+    border:2px solid #e6e6e6;
+}
+
+
+/*NAVIGATION STYLE*/
+
+.nav-container {
+    position: fixed;
+    color: white;
+    left: 1550px;
+    top: 100px;
+    font-size: 1.8em;
+    width: 270px;
+    height: auto;
+    display: flex;
+    letter-spacing: 1.0px;
+    z-index: 11;
+    text-decoration: none;
+    /*TEXT-DECORATION : NONE;  NOT WORKING. BUT LINE-THOUGH DOES! WHY?*/
+}
+
+
+/*ITEMS CLASS STYLE*/
+
+.item-1 {
+    position: relative;
+    text-align: center;
+    border: 2px solid transparent;
+    border-bottom-color: cadetblue;
+    width: 94px;
+    height: 30px;
+    margin: 5px;
+    left: 17px;
+    padding: 5px;
+}
+
+
+.item-3 {
+    position: relative;
+    text-align: center;
+    border: 2px solid transparent;
+    border-bottom-color: salmon;
+    width: 94px;
+    height: 30px;
+    margin: 5px;
+    left: 17px;
+    padding: 5px;
+}
+
+
+/*NAV LINK STYLE*/
+
+a {
+    color: whitesmoke;
+    opacity: .8
+}
+
+
+/*CONTAINER ROW SECTION*/
+
+.row {
+    position: relative;
+    font-family: Amaranth, sans-serif;
+    font-size: 1.1em;
+    top: 300px;
+    padding: 15px;
+    margin: 15px;
+    text-align: center;
+    display: -webkit-flex;
+    /* Safari */
+    display: flex;
+}
+
+
+/* Safari 6.1+ */
+
+.row:nth-of-type(1) {
+    -webkit-flex-grow: 1;
+}
+
+.row:nth-of-type(2) {
+    -webkit-flex-grow: 2;
+}
+
+.row:nth-of-type(3) {
+    -webkit-flex-grow: 1;
+}
+
+
+/* Standard syntax */
+
+.row:nth-of-type(1) {
+    flex-grow: 1;
+}
+
+.row:nth-of-type(2) {
+    flex-grow: 2;
+}
+
+.row:nth-of-type(3) {
+    flex-grow: 1;
+}
+
+.row h3 {
+    color: darkred;
+}
+
+
+/*WHAT'S MY FUNCTION*/
+
+#mpc {
+    position: relative;
+    width: 580px;
+    height: 340px;
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 5px;
+    color: transparent;
+    background-color: coral;
+    opacity: .7;
+    -webkit-transition: background-color 3s, opacity 8s, border-radius 3s, border-radius 1s;
+    transition: background-color 3s, opacity 8s, border-radius 3s, border-radius 1s;
+}
+
+
+
+#mpc:hover {
+    border: 2px solid firebrick;
+    border-radius: 15px;
+    color: whitesmoke;
+    background-color: skyblue;
+    opacity: .6;
+    border-radius:15px;
+
+}
+
+
+/*WHAT MAKES ME TICK*/
+
+#gameboy {
+    position: relative;
+    width: 580px;
+    height: 340px;
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 5px;
+    color: transparent;
+    background-color: coral;
+    opacity: .7;
+    -webkit-transition:  background-color 3s, opacity 8s, border-radius 3s, border-radius 1s;
+    transition:  background-color 3s, opacity 8s, border-radius 3s, border-radius 1s;
+}
+
+
+
+#gameboy:hover {
+    border: 2px solid purple;
+     border-radius: 15px;
+    color: whitesmoke;
+    background-color: skyblue;
+    opacity: .6;
+    border-radius:15px;
+}
+
+
+
+/*WHAT MY HEADING*/
+
+#passgen {
+    position: relative;
+    width: 580px;
+    height: 340px;
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 5px;
+    color: transparent;
+    background-color: coral;
+    opacity: .7;
+    -webkit-transition: background-color 3s, opacity 8s, border-radius 3s, border-radius 1s;
+    transition: background-color 3s, opacity 8s, border-radius 3s, border-radius 1s;
+}
+
+
+
+#passgen:hover {
+    border: 2px solid blue;
+    border-radius: 15px;
+    color: whitesmoke;
+    background-color: skyblue;
+    opacity: .6;
+    border-radius:15px;
+}
+
+
+/*CODEPEN EMBEDS STYLE*/
+
+.codepen {
+    position: relative;
+    border: 2px solid red;
+    border-radius: 15px;
+}
+
+
+/*BIG FOOTER STYLE*/
+
+.big-footer {
+    position: relative;
+    top: 320px;
+    left:9px;
+    text-align: center;
+    width: 98%;
+    height: 350px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: darkslategrey;
+    color: whitesmoke;
+    opacity: .8;
+    
+}
+
+
+/*BIGG FOOTER P STYLE*/
+
+.big-footer p {
+    position: relative;
+    font-size: 1.3em;
+    font-family: Amaranth, sans-serif;
+    width: 50%;
+    text-align: center;
+    left: 25%;
+}
+
+
+/*BIGG FOOTER H3 STYLE*/
+
+.big-footer h3 {
+    position: relative;
+    color: darkred;
+    border: 2px solid transparent;
+    border-bottom-color: orangered;
+    width: 230px;
+    height: 24px;
+    padding: 5px;
+    left: 42.6%;
+    top:12px;
+}
+
+ol {
+    position: relative;
+    display: flex;
+    width: 250px;
+    height: 30px;
+    text-align: center;
+    left: 41.9%;
+}
+
+.icons:after{
+    position: relative;
+    border: 2px solid red;
+    width 500px;
+    height: 15px;
+    top:;
+    z-index: ;
+    content: "This is where my icons will be";
+}
+
+h4 {
+    position: relative;
+    top: -30px;
+    padding: 5px;
+}
+
+
+/*COPYRIGHT STYLE*/
+
+i {
+    position: relative;
+    left: 44.3%;
+    top: 336px;
+    padding: 10px;
+    color: navajowhite;
+}
+/*BACK TO TOP */
+.topper{
+    position: relative;
+    display:;
+    left: 47.3%;
+    width:50px;
+    top: 340px;
+    padding: 10px;
+    color: floralwhite;
+}
+
+hr {
+    position: relative;
+    top: 300px;
+    width: 50%;
+}
